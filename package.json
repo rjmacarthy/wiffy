@@ -1,0 +1,31 @@
+{
+  "name": "wiffy",
+  "version": "1.0.0",
+  "description": "A bip38 bitcoin paper wallet utility",
+  "main": "create.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "bip38": "^3.1.1",
+    "bitcore-lib": "^8.24.1",
+    "install": "^0.13.0",
+    "wif": "^2.0.6"
+  },
+  "devDependencies": {
+    "mocha": "^8.2.1"
+  },
+  "scripts": {
+    "test": "mocha --timeout 5000 ./test/*.js"
+  },
+  "keywords": [
+    "bitcoin",
+    "paper",
+    "wallet",
+    "small",
+    "safe",
+    "secure"
+  ],
+  "author": "rjmacarthy",
+  "license": "MIT"
+}
