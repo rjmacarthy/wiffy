@@ -22,6 +22,7 @@ console.log(decrypt('6PYWiuqUWqTUyYn8pgudWrrjMkG29PWkvq12M7c9sG13mvbm6HQQFyJEjn'
 {
   address: '1KTcgVzPLqjZqgVPUmiCMZujwGzyySVDrt',
   privateKey: '89a961dc33a8bc1e9d92fcc33e18cca9d5b40bb6bc386a141172bce56658791c'
+  wif: 'L1VvbGvYwpkYGuxc4ru9YwQuvKHo8FRkWo1AcaYCXDNNS8BVcPdk'
 }
 
 ```
