@@ -3,5 +3,5 @@ const decrypt = require('./lib/decrypt')
 
 module.exports = {
   create,
-  decrypt,
+  decrypt
 }

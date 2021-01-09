@@ -4,5 +4,5 @@ module.exports = {
   privateKey:
     '7fb0cdbe9ea082d99cc658eb2ed73d7f645fef3fc2f0843b22d400647bedb828',
   wif: 'L1VvbGvYwpkYGuxc4ru9YwQuvKHo8FRkWo1AcaYCXDNNS8BVcPdk',
-  password: 'test',
+  password: 'test'
 }
