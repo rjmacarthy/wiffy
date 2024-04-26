@@ -1,6 +1,6 @@
 # wiffy
 
-A bip38 Bitcoin paper wallet utility.
+A bip38 Bitcoin paper wallet utility. The safest way to store your Bitcoin in cold storage!
 
 Create a wallet:
 
