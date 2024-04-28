@@ -5,11 +5,11 @@ const unlock = require('../lib/unlock')
 const generate = require('../lib/generate')
 
 describe('wiffy', () => {
-  it('can create a new address', () => {
+  it('can create a new wallet', () => {
     generate('password')
   })
 
-  it('can unlock address with password', () => {
+  it('can unlock wallet with password', () => {
     const address = unlock(fixtures.encrypted, fixtures.password)
     assert.strictEqual(address.address, fixtures.address)
     assert.strictEqual(address.privateKey, fixtures.privateKey)
