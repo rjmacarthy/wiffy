@@ -1,7 +1,7 @@
-const create = require('./lib/create')
-const decrypt = require('./lib/decrypt')
+const generate = require('./lib/generate')
+const unlock = require('./lib/unlock')
 
 module.exports = {
-  create,
-  decrypt
+  generate,
+  unlock
 }
