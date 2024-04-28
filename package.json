@@ -1,6 +1,6 @@
 {
   "name": "wiffy",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "A bip38 bitcoin paper wallet utility",
   "main": "create.js",
   "directories": {
