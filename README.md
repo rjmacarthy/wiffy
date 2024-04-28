@@ -2,11 +2,23 @@
 
 A bip38 Bitcoin paper wallet utility. The safest way to store your Bitcoin in cold storage!
 
-**Generate Wallet**
+**Install**
 
-Create a new Bitcoin wallet with a randomly generated key pair:
+```
+npm i wiffy
+```
 
-The output will include the wallet's address and encrypted private key.
+**Usage**
+
+```
+import wiffy from 'wiffy'
+
+const password = 'test'
+const { address, encrypted } = wiffy.generate(password)
+const { privateKey, wif, address } = wiffy.unlock(encrypted, password)
+```
+
+**API**
 
 `generate`	Generates a new Bitcoin wallet.
 
