@@ -1,18 +1,18 @@
 const assert = require('assert')
 
 const fixtures = require('./fixtures')
-const create = require('../lib/create')
-const decrypt = require('../lib/decrypt')
+const unlock = require('../lib/unlock')
+const generate = require('../lib/generate')
 
 describe('wiffy', () => {
-  it('can create encryped key', () => {
-    create('password')
+  it('can create a new address', () => {
+    generate('password')
   })
 
-  it('can decrypt encrypted key', () => {
-    const decrypted = decrypt(fixtures.encrypted, fixtures.password)
-    assert.strictEqual(decrypted.address, fixtures.address)
-    assert.strictEqual(decrypted.privateKey, fixtures.privateKey)
-    assert.strictEqual(decrypted.wif, fixtures.wif)
+  it('can unlock address with password', () => {
+    const address = unlock(fixtures.encrypted, fixtures.password)
+    assert.strictEqual(address.address, fixtures.address)
+    assert.strictEqual(address.privateKey, fixtures.privateKey)
+    assert.strictEqual(address.wif, fixtures.wif)
   })
 })
