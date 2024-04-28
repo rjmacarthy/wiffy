@@ -10,9 +10,9 @@ describe('wiffy', () => {
   })
 
   it('can unlock wallet with password', () => {
-    const address = unlock(fixtures.encrypted, fixtures.password)
-    assert.strictEqual(address.address, fixtures.address)
-    assert.strictEqual(address.privateKey, fixtures.privateKey)
-    assert.strictEqual(address.wif, fixtures.wif)
+    const wallet = unlock(fixtures.encrypted, fixtures.password)
+    assert.strictEqual(wallet.address, fixtures.address)
+    assert.strictEqual(wallet.privateKey, fixtures.privateKey)
+    assert.strictEqual(wallet.wif, fixtures.wif)
   })
 })
